@@ -1,0 +1,79 @@
+description "2-мерная игра\377";
+
+noblitz;
+
+uses
+	drx/GLDraw,
+	drx/Synth,
+	drx/VirtualGui/SDL2GL,
+	drx/Painter,
+	drx/CtrlCore,
+	drx/CtrlLib,
+	drx/GLDraw,
+	drx/Core,
+	X/glew;
+
+library(POSIX) "SDL2  GL drx_Core drx_unwind";
+
+library(WIN32 MSC) "SDL2.lib SDL2main.lib";
+
+library(WIN32 CLANG) "glu32 opengl32";
+
+options
+	-DVIRTUALGUI;
+
+file
+	JetStory.h,
+	Blocks.iml,
+	Raster.iml,
+	Gt.iml,
+	JetStory.iml,
+	Other.iml,
+	JsCtrls.iml,
+	data.i,
+	bin.brc,
+	icon.rc,
+	RasterIml.cpp,
+	map.cpp,
+	Beautify.cpp,
+	Flame.cpp,
+	Draw.cpp,
+	Sound.cpp,
+	Object.cpp,
+	Boom.cpp,
+	Data.cpp,
+	Enemy.cpp,
+	Ball.cpp,
+	Wasp.icpp,
+	BigWasp.icpp,
+	Base.icpp,
+	Pacman.icpp,
+	Projector.icpp,
+	Spark.icpp,
+	Bomber.icpp,
+	Rocket.icpp,
+	Whirl.icpp,
+	Alien.icpp,
+	Eye.icpp,
+	FireWork.icpp,
+	Launcher.icpp,
+	Pair.icpp,
+	PowerUp.icpp,
+	Head.icpp,
+	PaintScene.cpp,
+	Training.cpp,
+	GT.cpp,
+	Cursor.cpp,
+	Design.cpp,
+	Controller.cpp,
+	Game.cpp,
+	Tunes.cpp,
+	Credits.cpp,
+	Gui.cpp,
+	Win.cpp,
+	JetStory.cpp,
+	app.tpp;
+
+mainconfig
+	"" = "GUI VIRTUALGUI";
+
